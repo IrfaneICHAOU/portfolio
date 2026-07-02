@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irfane-portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        :root{
+            --bleu:#2563eb;
+            --noir:#1e293b;
+            --gris:#f1f5f9;
+        }
+        body{
+            font-family:'Arial',sans-serif ;
+            color: var(--noir);
+            line-height: 1.6;
+            background-color: #64748b;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: rgb(9, 45, 74);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--bleu);
+        }
+        .nav-links{
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: var(--gris);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover{
+            color: var(--bleu);
+        }
+        .hero{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--gris);
+            padding-top: 80px;
+            background-color: #64748b;
+        }
+        .photo-profil{
+            width: 180px;
+            height: 180px;
+            border-radius: 30%;
+            object-fit: cover;
+            border: 5px solid var(--bleu);
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease;
+        }
+        .hero h1 span{
+            color: var(--bleu);
+        }
+        .metier{
+            font: size 1.2rem ;
+            color: #64748b;
+            margin: 0.5rem 0;
+        }
+        .btn{
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 12px 30px;
+            background: var(--bleu);
+            color:white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .btn:hover{
+            transform: translateY(-3px);
+            background: #1d4ed8;
+        }
+        .section{
+            padding: 80px 5%;
+            min-height: 80vh;
+        }
+        .section h2{
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--noir);
+        }
+        .apropos-content{
+            display: flex;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .footer{
+            background: var(--noir);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .footer a{
+            color: var(--bleu);
+            text-decoration: none;
+        }
+        @media (max-width: 768px){
+            .nav-links{
+                display: none;
+            }
+            .apropos-content{
+                flex-direction: column;
+            }
+            .hero h1{
+                font-size: 1.8rem;
+            }
+        }
+        @keyframes fadeIn{
+            from{opacity: 0; transform: scale(0.8);}
+            to{opacity: 1; transform: scale(1);}
+        }
+    </style>
+</head>
+<body>
+    <!--1. NAVBAR -->
+    <nav class="navbar">
+        <div class="logo"> 👾 Irfane.dev</div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Acceuil</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- 2. HERO SECTION -->
+     <section id="acceuil" class="hero">
+        <div class="hero-content">
+            <img src="Screenshot_20260610_154120_Video Player.jpg" alt="photo de profi" class="photo-profil">
+            <h1>Salut, moi c'est <span>Irfane ICHAOU</span></h1>
+            <P class="metier">Développeur web junior | HTML CSS Csharp Python</P>
+            <p class="presentation"> je crée des sites web moderne, rapide et 100% responsive.</p>
+            <a href="#projets" class="btn">voir mes projets</a>
+
+        </div>
+     </section>
+    <!-- 3. A propos-->
+    <section id="apropos" class="section">
+        <h2>a propos de moi</h2>
+        <div class="desc">
+            <p>passionné de dev web depuis fort longtemp, j'aime transformer des idée en interface propres et utiles. Du coup je me mets dans les conditipon qu'il faut pour atteindre mes objectifs.  </p>
+        </div>
+        <div class="infos">
+            <p><strong>Age:</strong> 18 ans</p>
+            <p><strong>ville:</strong> Porto Novo</p>
+            <p><strong>Email:</strong> irfaneichaou@gmail.com</p>
+            <p><strong>Niveau d'étude:</strong> Licence 1 SIL</p>
+        </div>
+    </section>
+    <!-- Reste des sections vides a remplir-->
+     <section id="competences" class="section"><h2>Développement web <br>Développement mobile <br>Développement desktop</h2></section>
+     <section id="projets" class="section"><h2>Projets</h2></section>
+     <section id="contact" class="section"><h2>je suis joignable sur le 01 54 26 25 70</h2></section>
+    <!-- 7. FOOTER -->
+     <footer class="footer">
+        <p>&copy; 2026 Irfane dev. Tous droits réservés. </p>
+        <div>
+            <a href="#">GitHub</a>| <a href="#">LinKedIn</a>
+        </div>
+     </footer>
+     
+</body>
+</html>
