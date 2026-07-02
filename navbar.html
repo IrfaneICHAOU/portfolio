@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: rgb(55, 112, 138);
+            display:flex;
+            justify-content: space-between;
+            border-radius: 0.5rem;
+            position: fixed;
+            width: 100%;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin-left: 1rem;
+            margin-right: 4rem;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white ;
+            font-weight: bold;
+            transition: color 0.5s ease;
+            transition: text-decoration 0.5s ease;
+            transition: font-size 0.5s ease;
+        }
+        nav h2 a{
+            text-decoration: none;
+            color:white ;
+            margin-left: 1rem;
+        }
+        footer{
+            background-color: rgb(25, 67, 107);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        button{
+            background-color: rgb(38, 113, 143);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        section{
+            padding: 2rem;
+            border: 1px solid white;
+            background-color: rgb(26, 118, 154);
+            border-radius: 20px;
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        section h2{
+            font-size: 1.5rem;
+            color: white;
+        }
+        section p{
+            color: #94a3b8;
+            max-width: 810px;
+        }
+        .grid-1{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+            gap: 1.9rem;
+        }
+        .card{
+            background-color: #0d0846;
+            padding: 1.6rem;
+            border-radius:20px ;
+            border: 5px solid rgba(148, 163,184, 0,1);
+            min-width: 220px;
+        }
+        .card h3{
+            color: #fff;
+            font-size: 1.2 px;
+            margin-bottom: 0,8rem;
+        }
+        .conteiner{
+            width: min(1200px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+        nav ul li a:hover{
+            color: blue;
+            text-decoration: underline;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>
+            <a href="">LOGO</a>
+        </h2>
+        <ul>
+            <li><a href="">Acceuil</a></li>
+            <li><a href=""> A propos</a></li>
+            <li><a href="">Témiognage</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="conteiner">
+        <h1>Bienvenue sur mon site 🙂.</h1>
+        <p>Ceci est la page d'acceuil de mon site web. </p>
+        <button>Commencer</button>
+    </main>
+    <section id="Service">
+        <h2> Nos service</h2>
+        <div class="grid-1">
+            
+            <article class="card">
+                <h3> Développement web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sequi eum ipsum! Sed eveniet cupiditate rem et dolore. Cupiditate, at.</p>
+            </article>
+            <article class="card">
+                <h3> Développement mobile</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sequi eum ipsum! Sed eveniet cupiditate rem et dolore. Cupiditate, at.</p>
+            </article>
+            <article class="card">
+                <h3> Développement Desktop </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sequi eum ipsum! Sed eveniet cupiditate rem et dolore. Cupiditate, at.</p>
+            </article>
+        </div>
+    </section>
+    <footer><p>&copy; 2026 Mon Site. Tous droit résrever</p></footer>
+</body>
+</html>
