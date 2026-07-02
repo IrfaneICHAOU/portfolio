@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snikers</title>
+    
+   
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+   }
+   nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: rgb(9, 45, 74);
+            box-shadow: 0 2px 5px rgba(236, 233, 233, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-radius: 8px;
+        }.nav-links{
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: var(--gris);
+            font-weight: 500;
+             transition: color 0.5s ease;
+            transition: text-decoration 0.5s ease;
+            transition: font-size 0.5s ease;
+
+        }
+        .nav-links a:hover{
+            color: var(--bleu);
+            font-size: 1.5rem;
+            }
+            :root{
+            --bleu:#2563eb;
+            --noir:#1e293b;
+            --gris:#f1f5f9;
+            
+        }
+        div{
+            color: white;
+            font-size: 3rem;
+            font-family:Algerian;
+        }
+        img{
+            width: 100%;
+            height: 30rem;
+        }
+        .apropos{
+            font-size: 3rem;
+            background-color: gray;
+            
+        }
+        footer{
+            background-color:rgb(9, 45, 74);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .achats{
+            display: flex;
+            background-color: gray;
+            place-items: center;
+            justify-content: center;
+            
+        }
+        h3{
+            text-align: center;
+            color: black;
+            margin-left: 20rem;
+            font-size: 2rem;
+            justify-content: center;
+            margin-right: 17rem;
+        }
+        .acceuil{
+            background-color: gray;
+            
+        }
+        body{
+            background-color: gray;
+        }
+        form{
+            width: 40%;
+            
+            
+        }
+        input{
+            width:60%;
+            height: 3rem;
+        }
+        h4{
+            color:red;
+            font-size: 0.5rem;
+        }
+       .grid-1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+            gap: 1.9rem;
+        }
+        .card{
+
+        
+            background-color: #0d0846;
+            padding: 1.6rem;
+            border-radius:20px ;
+            border: 5px solid rgba(148, 163,184, 0,1);
+            min-width: 220px; color: #fff;
+             width: min(1200px, calc(100% - 2rem));
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+        .card h5{
+            font-size: 1.2 px;
+            margin-bottom: 0,8rem;
+            
+        }
+        
+
+        
+
+
+section{
+            padding: 2rem;
+            border: 1px solid white;
+            background-color: gray;
+            border-radius: 20px;
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div>FANO SNICKERS👟👟👟</div>
+       <ul class="nav-links">
+         <li><a href="#Acceuil">Acceuil</a></li>
+         <li><a href="#A propos">A propos</a></li>
+         <li><a href="#Nos produits">Nos produits</a></li>
+         <li><a href="#Achats">Achats</a></li>
+       </ul>
+      </nav>
+    </header> <br> <br> <br> <br><br>
+    <section id="Acceuil" class="acceuil">
+        <br> <br><h2>Bienvenue sur FANO SNICKERS🙂</h2>
+        <img src="6d6656b9e7d46b60e0c6936d60621e9c.png" alt=""> <br>
+        <p>Avec FANO SNICKERS, vos découvrer des snickers chic class et en tous genre. Ici vos achats ce font en toutes sécurité alors n'hésitez pas nous contacté, faire vos achats, et laissez un bref commentaire pour des eventuelles perfectionnement💫👍.</p>
+    </section> <br> <br><br><br>
+    <section id="A propos" class="apropos">
+        <p>Créer en 2026 par le jeune entreprenneur Irfane ICHAOU, FANO SNICKERS est une institu de vente de snickers👟 en tous genre et a bon prix. En effet vue lavennement et l'évolution du monde moderne le phonomène "DRIP" a fais son apparition du coup les snickers👟 qui constituent une pièce mâitresse de se style vestimentaire sont devenue plud demmander sur le marché. C'ést suite a cela que l'institu FANO SNICKERS est né. Elle est situé plus précisement a Agbokou/porto novo au Bénin. De plus nous recevons les frais d'achats a la livraison.</p>
+    </section><br><br><br>
+    <section id="Nos produits" class="nosproduits">
+        <h2>Snickers disponible</h2>
+        <div class="grid-1">
+
+            <article class="card">
+                <h5>PUMA</h5>
+                <img src="9897af12e97249cbf5fee9f4c80b4833.png" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de la PUMA" target="_blank" class="btn-whatsapp">BUY</a>
+            </article>
+            <article class="card">
+                <h5>LV SKATENEAKERS</h5>
+                <img src="Screenshot_20260622_150334_TikTok.jpg" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de LV SKEATENEAKERS" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>TIMBERLAND</h5>
+                <img src="ede5135dea7b59b9a146ad33d10f1499.png" alt="">
+                <a  href="https://wa.me/2290154262570?text=je veux passe la commande de la TIMBERLAND" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>Louis Vuitton</h5>
+                <img src="Screenshot_20260702_152949_Video Player.jpg" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de la LOUIS VUITTON" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>SAMBA</h5>
+                <img src="Screenshot_20260702_152958_Video Player.jpg" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de la SAMBA" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>ASICS GEL</h5>
+                <img src="Screenshot_20260702_153005_Video Player.jpg" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de l'ASICS GEL" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>AIR MAX 95</h5>
+                <img src="Screenshot_20260702_153015_Video Player.jpg" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de la AIR MAX 95" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>NEW BALANCE</h5>
+                <img src="Screenshot_20260702_153025_Video Player.jpg" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de la NEW BALENCE" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>JORDAN 4</h5>
+                <img src="Screenshot_20260702_153035_Video Player.jpg" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande du JORDAN 4" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>NUMERICS</h5>
+                <img src="numerics.png" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande du NUMERICS" target="_blank">BUY</a>
+            </article>
+            <article class="card">
+                <h5>RIC OWENS</h5>
+                <img src="ric owens.png" alt="">
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande du RICS OWENS" target="_blank">BUY</a>
+            </article>
+            
+        </div>
+    </section>
+     
+
+    <section id="Achats" class="achats">
+         
+
+        <form action="">
+            <fieldset>
+                Identifiant: <input type="text"> <br> <br>
+                Articles: <input type="text"> <br> <br>
+                Nombres: <input type="text"> <br> <br>
+                <select name="" id="">
+                    <option value="">Novi voyage</option>
+                    <option value="">A domicile</option>
+                </select>
+                <a href="https://wa.me/2290154262570?text=je veux passer la commande de cet article" target="_blank">Commander</a>
+            </fieldset><br><br><br>
+        </form><br><br><br><br>
+        
+    </section>
+    
+  <footer>&copy; 2026 Mon Site. Tous droit réserver.</footer>
+  <script>
+    function sendTowhatsapp(e){
+        e.preventDefault();
+        let nom = document.getElementById("Nominput").value.trim();
+        let Téléphone = document.getElementById("Téléphoneinput").value.trim();
+        let Commande = document.getElementById("commande").value.trim();
+        //message clair et lisible
+        let message = 'nouvelle commande\n\nNom :${Nom}\nTéléphone: ${Téléphone}\nCommande:${commande}';
+        let numéroBoutique = "2290154262570";
+        let url ="https://wa me/"+ numéroBoutique + "?text=" + encodeURIComponent(message);
+
+        window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html
